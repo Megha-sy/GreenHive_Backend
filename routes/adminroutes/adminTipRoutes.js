@@ -4,7 +4,7 @@ const {
   getAllTips,
   getDeletedTips,
   deleteTip,
-} = require("../../controllers/admincontroller/adminTipController");
+} = require("../../controllers/adminController/adminTipController");
 
 const { protect, authorizeRoles } = require("../../middleware/auth");
 
