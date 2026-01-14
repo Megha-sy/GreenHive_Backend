@@ -12,7 +12,7 @@ const { protect, authorizeRoles } = require("../../middleware/auth");
 router.use(protect, authorizeRoles("admin"));
 
 router.get("/", getAllTips);
-router.get("/deleted", getDeletedTips); // ✅ REQUIRED
+router.get("/deleted", getDeletedTips);
 router.delete("/:id", deleteTip);
 
 module.exports = router;
